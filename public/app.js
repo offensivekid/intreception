@@ -1091,4 +1091,4 @@ setTimeout(() => {
         loadingScreen.style.display = 'none';
         console.log('🚨 Emergency fallback: killed loading screen');
     }
-}, 1000);6
+}, 1000);
