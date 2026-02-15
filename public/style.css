@@ -129,7 +129,7 @@ body {
 }
 
 .sidebar {
-    width: 240px;
+    width: 280px;
     flex-shrink: 0;
 }
 
@@ -199,10 +199,10 @@ body {
 
 /* Staff Info */
 .staff-info {
-    padding: 16px;
-    background: var(--bg-card);
+    padding: 20px;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 0, 0, 0.05) 100%);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .staff-notice {
@@ -219,19 +219,23 @@ body {
 .telegram-link {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
     background: #0088cc;
-    border-radius: 6px;
+    border-radius: 8px;
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 12px 0;
     transition: all 0.2s;
 }
 
 .telegram-link:hover {
     background: #006699;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
 }
 
 .staff-description {
@@ -241,21 +245,27 @@ body {
 
 /* Stats */
 .stats-card {
-    padding: 16px;
+    padding: 20px;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .stat-value {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 800;
     color: var(--red);
+    line-height: 1;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .stat-label {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
 /* Create Button */
@@ -290,14 +300,15 @@ body {
 }
 
 .section-heading {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     margin-bottom: 8px;
+    letter-spacing: -0.5px;
 }
 
 .section-subheading {
     color: var(--text-dim);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .filter-tabs {
@@ -307,25 +318,27 @@ body {
 }
 
 .filter-tab {
-    padding: 8px 16px;
-    background: transparent;
+    padding: 10px 20px;
+    background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 8px;
     color: var(--text-dim);
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .filter-tab:hover {
-    border-color: var(--text);
+    background: var(--bg-hover);
+    border-color: var(--red);
     color: var(--text);
 }
 
 .filter-tab.active {
-    background: var(--bg-hover);
+    background: var(--red);
     border-color: var(--red);
-    color: var(--red);
+    color: white;
 }
 
 /* Thread Card */
@@ -337,42 +350,49 @@ body {
 
 .empty-state {
     text-align: center;
-    padding: 60px 20px;
+    padding: 120px 40px;
     color: var(--text-dim);
 }
 
 .empty-icon {
-    margin-bottom: 16px;
-    color: var(--text-dim);
+    margin-bottom: 24px;
+    color: var(--red);
 }
 
 .empty-icon svg {
-    opacity: 0.5;
+    width: 64px;
+    height: 64px;
+    opacity: 0.3;
 }
 
 .empty-title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--text);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .empty-message {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-dim);
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .thread-card {
-    padding: 16px;
+    padding: 24px;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .thread-card:hover {
     border-color: var(--red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
 }
 
 .thread-header {
