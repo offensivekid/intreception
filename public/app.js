@@ -21,7 +21,7 @@ const translations = {
         
         // Threads -> Темы
         latest_threads: 'Latest Threads',
-        discover: 'Discover what's happening in the community',
+        discover: 'Discover what\'s happening in the community',
         create_thread: 'Create Thread',
         loading_threads: 'Загрузка тем...',
         no_threads: 'Тем пока нет',
@@ -1091,5 +1091,4 @@ setTimeout(() => {
         loadingScreen.style.display = 'none';
         console.log('🚨 Emergency fallback: killed loading screen');
     }
-}, 1000);
-
+}, 1000);6
