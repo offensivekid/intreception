@@ -278,7 +278,15 @@ body {
 
 /* Content Section */
 .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 24px;
+    gap: 24px;
+}
+
+.section-header > div:first-child {
+    flex: 1;
 }
 
 .section-heading {
@@ -295,7 +303,7 @@ body {
 .filter-tabs {
     display: flex;
     gap: 8px;
-    margin-top: 16px;
+    flex-shrink: 0;
 }
 
 .filter-tab {
@@ -325,6 +333,33 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+}
+
+.empty-icon {
+    margin-bottom: 16px;
+    color: var(--text-dim);
+}
+
+.empty-icon svg {
+    opacity: 0.5;
+}
+
+.empty-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.empty-message {
+    font-size: 14px;
+    color: var(--text-dim);
 }
 
 .thread-card {
